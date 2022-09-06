@@ -1,0 +1,10 @@
+body {
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aqua;
+    color: black;
+    text-transform: uppercase;
+}
+
