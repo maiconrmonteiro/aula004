@@ -1,10 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Indie+Flower&display=swap');
+/*
+Fonte: font-family: 'Indie Flower', cursive;
+Fonte: font-family: 'Chakra Petch', sans-serif;
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+
+
 body {
+    background-color: aqua;
+}
+
+h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.ola-mundo {
     border: 1px solid black;
     border-radius: 10px;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: aqua;
+    background-color: rgba(5, 180, 180, 0.699);
     color: black;
     text-transform: uppercase;
+    padding: 20px;
+    width: 70vw;
+    margin: auto;
 }
 
