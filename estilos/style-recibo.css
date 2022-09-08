@@ -57,3 +57,22 @@ body {
     padding-top: 50px;
     width: 50%;
 }
+
+.bt_print > input {
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    background: black;
+    font-size: 18px;
+    color: azure;
+    box-shadow: 10px 10px 34px -10px rgba(0,0,0,0.75);
+}
+
+.bt_print > input:hover {
+    padding: 10px;
+
+}
+
+.bt_print {
+    text-align: center;
+}
