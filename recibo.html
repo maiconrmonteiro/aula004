@@ -21,13 +21,21 @@
     var extenso = prompt('Valor por extenso... (OPCIONAL)')
     var pagador = prompt('Nome do Pagador...');
     var documento = prompt('Digite o CPF ou CNPJ...');
-    var referencia = prompt('Referente a que?')
-    var data = prompt('Data do pagamento...')
-    var obs = prompt('Alguma observação?')
+    var referencia = prompt('Referente a que?');
+    var obs = prompt('Alguma observação?');
+
+    
+    var dataReal = new Date();
+    var dia = String(dataReal.getDate()).padStart(2, '0');
+    var mes = String(dataReal.getMonth() + 1).padStart(2, '0');
+    var ano = dataReal.getFullYear();
+    dataAtual = dia + '/' + mes + '/' + ano;
+
+
     document.write(`<div class="recibo-pronto">Recebi(emos) de <strong>${pagador.toUpperCase()}</strong> - CPF/CNPJ nº <strong>${documento}</strong>, a importância de <strong>R$${valor}</strong> <strong>(${extenso.toUpperCase()})</strong> referente à <strong>${referencia.toUpperCase()}</strong><br><br>Para maior clareza firmo(amos) o presente recibo para que produza os seus efeitos, dando plena, rasa e irrevogável quitação, pelo valor recebido.<br><br>
     Observação: <strong>${obs.toUpperCase()}</strong></div><br>
     <div class="cidade">
-        <p>BIGUAÇU, ${data} </p>
+        <p>BIGUAÇU, ${dataAtual} </p>
     </div>
         <div class="assinatura">
             <div class="assinatura-ignacio">
@@ -44,6 +52,7 @@
         <div class="bt_print">
            <input type="button" value="Imprimir" onclick="window.print()"/>
         </div>
+
         `);
 
 </script>
