@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Indie+Flower&display=swap');
+/*
+Fonte: font-family: 'Indie Flower', cursive;
+Fonte: font-family: 'Chakra Petch', sans-serif;
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+h1 {
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+body {
+    padding-top: 50px;
+    margin: auto;
+    width: 50vw;
+    height: 50vh;
+    background-color: white;
+}
+
+.top-recibo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+    gap: 100px;
+}
+
+.titulo {
+    font-size: 20px;
+    text-align: center;
+}
+
+.cidade{
+    text-align: right;
+}
+
+.logo{
+    width: 15%;
+}
+
+.assinatura{
+    text-align: center;
+}
+.assinatura-ignacio > img{
+    width: 50%;
+    margin-bottom: -61px;
+}
+
+.carimbo > img{
+    padding-top: 50px;
+    width: 50%;
+}

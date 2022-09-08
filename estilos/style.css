@@ -23,15 +23,51 @@ h1 {
     text-transform: uppercase;
 }
 
+img {
+    width: 40px;
+}
+
+.seta {
+    padding-top: 10px;
+    text-align: center;
+}
+
 .ola-mundo {
     border: 1px solid black;
     border-radius: 10px;
     text-align: center;
-    background-color: rgba(5, 180, 180, 0.699);
+    background-color: #05b4b4b2;
     color: black;
     text-transform: uppercase;
     padding: 20px;
     width: 70vw;
     margin: auto;
+    box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.75);
 }
 
+button {
+    border: none;
+    padding: 10px;
+    background: #05b4b4b2;
+    border-radius: 08px;
+    box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.75);
+}
+
+button > a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background: #1a4949b2 ;
+    border: 1px solid white;
+}
+
+
+.bts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}

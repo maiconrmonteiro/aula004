@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recibo</title>
+    <link rel="stylesheet" href="estilos/style-recibo.css">
+    <link rel="stylesheet" href="estilos/impressora.css" media="print">
+</head>
+<body>
+    <div class="top-recibo">
+        <img class="logo" src="imagens/logo-floranda.png" alt="">
+        <h1 class="titulo">Recibo de Pagamento</h1>
+        <P>Nº____</p>
+    </div>
+</body>
+<script>
+    var valor = prompt('Digite o valor...');
+    var extenso = prompt('Valor por extenso... (OPCIONAL)')
+    var pagador = prompt('Nome do Pagador...');
+    var documento = prompt('Digite o CPF ou CNPJ...');
+    var referencia = prompt('Referente a que?')
+    var data = prompt('Data do pagamento...')
+    var obs = prompt('Alguma observação?')
+    document.write(`<div class="recibo-pronto">Recebi(emos) de <strong>${pagador.toUpperCase()}</strong> - CPF/CNPJ nº <strong>${documento}</strong>, a importância de <strong>R$${valor}</strong> <strong>(${extenso.toUpperCase()})</strong> referente à <strong>${referencia.toUpperCase()}</strong><br><br>Para maior clareza firmo(amos) o presente recibo para que produza os seus efeitos, dando plena, rasa e irrevogável quitação, pelo valor recebido.<br><br>
+    Observação: <strong>${obs.toUpperCase()}</strong></div><br>
+    <div class="cidade">
+        <p>BIGUAÇU, ${data} </p>
+    </div>
+        <div class="assinatura">
+            <div class="assinatura-ignacio">
+                <img src="imagens/assinatura-ignacio.png" alt="">
+            </div>
+            <p>_____________________________________________</p><br><br>
+            <p>FLORANDA COMERCIO DE FLORES</p>
+                <p>83.891.994/0001-00</p>
+                <p>(48) 3279-8905</p>
+        </div>
+        <div class="carimbo">
+        <img src="imagens/carimbro.png" alt="">
+        </div>
+        `);
+
+</script>
+</html>
