@@ -17,13 +17,24 @@
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
     <div>Clique em mim</div><br><br>
-    <input type="text" id="campo">
+    <form action="">
+        <input type="text" id="name" name="name">
+        <input type="submit" value="Enviar">
+      </form>
     
     <script>
-        var maicon = document.getElementById(campo);
-        maicon = value.document.getElementById(maicon);
+       var input = document.querySelector("#name");
+       var texto = input.value;
 
-        console.log(maicon);
+       function mostrarDados(){
+          valor = document.getElementById("valor").value;
+
+        // MOSTRARÁ O VALOR IMPRESSO NA TELA
+        document.getElementById("resultado").innerHTML = "Valor: "+valor+"<br>";
+
+        // MOSTRARÁ UM AVISO
+        alert("Valor: "+valor);
+    
 
     </script>
 </body>
