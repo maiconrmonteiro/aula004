@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,26 +15,28 @@
 <body>
     <h1>Iniciando estudos DOM</h1>
     <p>Aqui vai o resultado</p>
-    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
-    <div>Clique em mim</div><br><br>
-    <form action="">
-        <input type="text" id="name" name="name">
-        <input type="submit" value="Enviar">
-      </form>
+    <p id="paragrafo">Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div class="quadro">Clique em mim</div>
     
     <script>
-       var input = document.querySelector("#name");
-       var texto = input.value;
+        var corpo = window.document.body;
+        var titulo = window.document.getElementsByTagName('h1')[0];
+        var p1 = document.getElementsByTagName('p')[0]
+        var p2 = window.document.getElementById('paragrafo');
 
-       function mostrarDados(){
-          valor = document.getElementById("valor").value;
+        var msg = window.document.querySelector('div.quadro');
 
-        // MOSTRARÁ O VALOR IMPRESSO NA TELA
-        document.getElementById("resultado").innerHTML = "Valor: "+valor+"<br>";
+        msg.style.background = 'green';
 
-        // MOSTRARÁ UM AVISO
-        alert("Valor: "+valor);
-    
+
+        p2.style.color = 'yellow'
+        
+        p1.style.color = 'blue';
+
+        corpo.style.background = 'black';
+
+        titulo.style.color = 'red';
+
 
     </script>
 </body>

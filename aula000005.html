@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula sobre DOM</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background: rgba(15, 255, 115, 0.836);
+        }
+
+        main {
+            margin: auto;
+            width: 60vw;
+            height: 72vh;
+        }
+
+        header {
+            padding-top: 18px;
+            text-align: center;
+        }
+
+        header > h1 {
+            color: blueviolet;
+            font-size: 40px;
+        }
+
+        header > nav {
+            font-size: 20px;
+        }
+
+        article {
+            margin: 50px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        footer {
+            background: grey;
+            text-align: center;
+            padding: 23px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Titulo do site</h1>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Quem somos</li>
+                <li>Contatos</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Titulo 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos vero illo officia! Sint itaque amet perspiciatis. Voluptas, ad quas. Ducimus officia fugiat eius quia quibusdam at autem itaque quae exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, cumque architecto? Saepe ratione, quasi ipsum vel fuga accusantium numquam dolorum aperiam placeat ad nihil dignissimos cupiditate eius omnis magnam blanditiis.</p>
+        </article>
+        <article>
+            <h2>Titulo 2</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium cumque ab reprehenderit hic, id odio ipsa dolorum quam quae excepturi suscipit quos libero fugit commodi explicabo magnam optio illum pariatur! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi veniam modi obcaecati maiores delectus iusto ad sit qui inventore id, maxime sint asperiores nisi doloremque molestias veritatis hic eligendi excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. In dolore quia recusandae labore reiciendis aliquid eligendi totam, quam tenetur corrupti vel molestiae vitae optio asperiores adipisci quos tempore porro magnam.</p>
+        </article>
+        <article>
+            <h2>Titulo 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima facilis blanditiis magni quaerat ad eos eaque numquam. Nemo est vitae distinctio adipisci quo illum dolorum enim praesentium velit beatae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aperiam voluptatem officia nemo rerum nostrum? Modi, obcaecati nihil fugiat quos minima explicabo architecto vero laborum, at, pariatur quisquam quas nemo.lorn Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, eligendi tenetur accusamus dolorem nam commodi quisquam? Similique voluptatum laboriosam incidunt mollitia optio animi nulla accusamus hic, reiciendis repellendus aliquam perspiciatis.</p>
+        </article>
+    </main>
+    <footer>
+        <p>Site criado para teste Maicon Monteiro</p>
+    </footer>
+    <script>
+        var titulo = window.document.getElementsByTagName('h1')[0];
+        var paragrafos = window.document.getElementsByTagName('p')[0];
+        var paragrafos2 = window.document.getElementsByTagName('p')[2];
+        var rodape = window.document.getElementsByTagName('footer')[0];
+
+
+        titulo.style.background = 'red';
+        paragrafos.style.color = 'red';
+        paragrafos2.style.color = 'red';
+
+        paragrafos2.innerHTML = 'Isso é um teste de <strong>manipulação</strong>. pois nessa area o texto era outro.';
+
+        rodape.style.background = 'orange';
+
+
+    </script>
+    
+</body>
+</html>
