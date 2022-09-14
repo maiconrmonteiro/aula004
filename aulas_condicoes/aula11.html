@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+    <style>
+        .acima{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema Detran para velocidades</h1>
+
+    <input type="number" name="numberVel" id="numberVel">
+    <input type="button" value="verificar" name="numberVel" id="botaoVel" onclick="conferir()"><br><br><br>
+    Velocidade....
+    <span id="res">0</span>
+
+    <span id="mensagem"></span>
+    
+
+<script>
+    function conferir() {
+        var vel = window.document.getElementById('numberVel');
+        var res = window.document.getElementById('res');
+        var msg = window.document.getElementById('mensagem')
+        vel = Number(vel.value);
+        res.innerHTML = vel 
+
+        if (vel > 60) {
+            msg.innerHTML = (`<br><br><strong class="acima">${vel}</strong> está acima da velocidade, por isso você será multado.`)
+        } else {
+            msg.innerHTML = `<br><br>Você está de parabens, ${vel} Está dentro do limite`
+        }
+
+    }
+
+
+
+</script>
+
+
+</body>
+</html>
