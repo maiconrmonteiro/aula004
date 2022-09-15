@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo {
+    width: 35%;
+}
+
+body {
+    background: #61184E;
+}
+
+header {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+section {
+    margin: auto;
+    background: white;
+    width: 65vw;
+    height: 55vh;
+    border-radius: 10px;
+}
+
+footer {
+    background: #E8EBED;
+    padding: 24px;
+    text-align: center;
+}
+
