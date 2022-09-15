@@ -1,8 +1,10 @@
 var atual = new Date()
-var diaSemana = atual.getDay();
+
+var diaSemana = atual.getMonth();
 
 
-switch (diaSemana) {
+
+    switch (diaSemana) {
 
     case 0:
         console.log('Hoje é Domingo')
@@ -26,7 +28,10 @@ switch (diaSemana) {
         console.log('Hoje é Sabado')
         break
     case 7:
-        console.log('Domingo')
+        console.log('Nada')
+        break
+    case 8:
+        console.log('Setembro')
         break
 
     default:
