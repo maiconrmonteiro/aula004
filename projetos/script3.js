@@ -34,8 +34,7 @@ function gerarRecibo() {
     campos.innerHTML = (`<div class="recibo-pronto">
     <p class="controle">Nº ${controle}</p>
     Recebi(emos) de <strong>${pagador.value.toUpperCase()}</strong> - CPF/CNPJ nº <strong>${documento.value}</strong>, a importância de <strong>R$${valor.value}</strong> <strong>( ${extenso.value.toUpperCase()})</strong> referente à <strong>${referente.value.toUpperCase()}</strong><br><br>Para maior clareza firmo(amos) o presente recibo para que produza os seus efeitos, dando plena, rasa e irrevogável quitação, pelo valor recebido.<br><br>
-    <p class="obs">Pagamento:  <strong>${formaPagto}</strong><p>
-    </div><br>
+    <p class="obs">Pagamento:  <strong>${formaPagto}</strong></p></div><br>
     <div class="cidade">
         <p class="data">BIGUAÇU, ${dataAtual} </p>
     </div>
