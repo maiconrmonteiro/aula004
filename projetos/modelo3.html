@@ -6,21 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recibo Floranda</title>
     <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="impressora3.css" media="print">
 </head>
 <body>
     <header>
         <img class="logo" src="fotos/logoFloranda.png" alt="Logo Floranda">
+        <h1>Recibo</h1>
+
     </header>
     <main>
-        <section class="campos">
-            Teste
+        <section class="campos" id="campos">
+
+            <label for="valor">Valor</label><br>
+            <input type="number" name="campos" id="valor"><br>
+            <label for="extenso">Valor por Extenso (Opcional)</label><br>
+            <input type="text" name="campos" id="extenso"><br>
+            <label for="pagador">Pagador</label><br>
+            <input type="text" name="campos" id="pagador"><br>
+            <label for="documento">Documento</label><br>
+            <input type="number" name="campos" id="documento"><br>
+            <label for="referente">Referente á</label><br>
+            <input type="text" name="campos" id="referente"><br>
+
+            <label for="PIX">PIX</label>
+            <input type="radio" name="formaPagto" id="PIX" required>
+            <label for="dinheiro">Dinheiro</label>
+            <input type="radio" name="formaPagto" id="dinheiro">
+            <label for="cartao">Cartão</label>
+            <input type="radio" name="formaPagto" id="cartao"><br>
+            
+            <input type="button" value="Gerar Recibo" onclick="gerarRecibo()">
+
         </section>
     </main>
     <footer>
         <p>Floranda Comercio de Flores</p>
         <p>CNPJ: 83.891.994/0001-00</p>
         <p>BR 101 KM 184, Tijuquinhas, Biguaçu, SC</p>
-        <p>Pagina desenvolvida por <a href="https://github.com/maiconrmonteiro" target="_blank">Maicon Monteiro</a></p>
+        <p>Pagina/Sistema desenvolvido por <a href="https://github.com/maiconrmonteiro" target="_blank">Maicon Monteiro</a></p>
     </footer>
+
+    <script src="script3.js"></script>
 </body>
 </html>

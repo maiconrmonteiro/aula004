@@ -16,7 +16,7 @@
     </div>
     
 </body>
-<script>
+<script></script>
     var valor = prompt('Digite o valor...');
     var extenso = prompt('Valor por extenso... (OPCIONAL)')
     var pagador = prompt('Nome do Pagador...');
@@ -32,7 +32,12 @@
     dataAtual = dia + '/' + mes + '/' + ano;
 
 
-    document.write(`<div class="recibo-pronto">Recebi(emos) de <strong>${pagador.toUpperCase()}</strong> - CPF/CNPJ nº <strong>${documento}</strong>, a importância de <strong>R$${valor}</strong> <strong>(${extenso.toUpperCase()})</strong> referente à <strong>${referencia.toUpperCase()}</strong><br><br>Para maior clareza firmo(amos) o presente recibo para que produza os seus efeitos, dando plena, rasa e irrevogável quitação, pelo valor recebido.<br><br>
+    document.write(`<div class="top-recibo">
+        <img class="logo" src="imagens/logo-floranda.png" alt="">
+        <h1 class="titulo">Recibo de Pagamento</h1>
+        <P>Nº____</p>
+    </div>
+    <div class="recibo-pronto">Recebi(emos) de <strong>${pagador.toUpperCase()}</strong> - CPF/CNPJ nº <strong>${documento}</strong>, a importância de <strong>R$${valor}</strong> <strong>(${extenso.toUpperCase()})</strong> referente à <strong>${referencia.toUpperCase()}</strong><br><br>Para maior clareza firmo(amos) o presente recibo para que produza os seus efeitos, dando plena, rasa e irrevogável quitação, pelo valor recebido.<br><br>
     Observação: <strong>${obs.toUpperCase()}</strong></div><br>
     <div class="cidade">
         <p>BIGUAÇU, ${dataAtual} </p>

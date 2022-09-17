@@ -4,7 +4,7 @@
 }
 
 .logo {
-    width: 35%;
+    width: 15%;
 }
 
 body {
@@ -12,22 +12,76 @@ body {
 }
 
 header {
-    padding-top: 15px;
     padding-bottom: 20px;
-    text-align: center;
+    padding-top: 10px;
+    padding-left: 30px;
 }
 
 section {
+    
     margin: auto;
     background: white;
-    width: 65vw;
-    height: 55vh;
+    width: 40vw;
+    height: 50vh;
     border-radius: 10px;
-}
-
-footer {
-    background: #E8EBED;
-    padding: 24px;
     text-align: center;
 }
 
+header > h1 {
+    display: none;
+}
+
+.controle {
+    display: flex;
+    justify-content: end;
+    padding-bottom: 50px;
+}
+
+.recibo-pronto {
+    background: #61184E;
+}
+
+
+footer {
+    padding: 24px;
+    text-align: center;
+    padding-top: 130px;
+}
+
+footer > p > a {
+    color: aliceblue;
+}
+
+/*Daqui pra frente assinatura IG*/
+
+.assinatura{
+    text-align: center;
+}
+.assinatura-ignacio > img{
+    width: 30%;
+    margin-bottom: -40px;
+}
+
+.data {
+    display: flex;
+    justify-content: end;
+}
+
+.obs {
+    display: flex;
+}
+
+.carimbo > img{
+    display: none;
+}
+
+.bt_print > input {
+    margin: 30px;
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    background: #e2bc00;
+    font-size: 18px;
+    color: #0d160b;
+    box-shadow: 10px 10px 34px -10px rgba(0,0,0,0.75);
+}
