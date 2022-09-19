@@ -4,11 +4,45 @@
 }
 
 .logo {
-    width: 15%;
+    width: 20%;
 }
 
+
 body {
-    background: #61184E;
+    background: #61184e;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    
+}
+
+.logoPreta {
+    width: 20%;
+    display: none;
+}
+
+.titulo-recibo {
+    padding-top: 40px;
+}
+
+.numero-controle {
+    padding-top: 45px;  
+}
+
+.logoBranca {
+    width: 20%;
+}
+
+
+
+
+.logoBranca {
+    display: flex;
+    justify-content: flex-start;
 }
 
 header {
@@ -17,14 +51,17 @@ header {
     padding-left: 30px;
 }
 
-section {
-    
+section { 
+    font-family: Arial, Helvetica, sans-serif;
     margin: auto;
     background: white;
     width: 40vw;
-    height: 50vh;
+    height: 70vh;
     border-radius: 10px;
     text-align: center;
+    background: #e2bc00;
+    color: #000;
+    box-shadow: 10px 10px 48px -11px rgba(26,0,0,0.73);
 }
 
 header > h1 {
@@ -41,11 +78,69 @@ header > h1 {
     background: #61184E;
 }
 
+.camposInputs {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 200px;
+}
+
+.camposInputs > input {
+    border: 1px solid #143109;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.inputs {
+    padding-top: 5px;
+    margin-top: 10px;
+}
+
+/* Daqui pra frente botão novo*/
+
+.btn {
+    padding-top: 30px;
+}
+
+.btn-neon{
+  
+    color:#000;
+   
+  }
+  .btn-neon{
+    padding:15px 25px;
+    font-size:1em;
+    margin-left:10px;
+    text-transform:uppercase;
+    text-decoration:none;
+    background: #53b9d8;
+    outline:none;
+    cursor:pointer;
+    border:2px solid transparent;
+    border-radius:4px;
+    transition:400ms;
+  }
+  .btn-neon:hover{
+    border: 2px solid;
+    box-shadow: 0 0 8px;
+  }
+  .btn-neon:focus{
+    color:#000;
+    border: 2px solid #006E90;
+    background:#006E90;
+    box-shadow: 0 0 18px #006E90;
+  }
+
+.radios {
+    padding-top: 20px;
+}
 
 footer {
     padding: 24px;
     text-align: center;
-    padding-top: 130px;
+    color: white;
+    font-style: italic;
 }
 
 footer > p > a {
@@ -75,7 +170,7 @@ footer > p > a {
     display: none;
 }
 
-.bt_print > input {
+.btn > input {
     margin: 30px;
     border: none;
     border-radius: 10px;

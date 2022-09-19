@@ -10,39 +10,43 @@
 </head>
 <body>
     <header>
-        <img class="logo" src="fotos/logoFloranda.png" alt="Logo Floranda">
-        <h1>Recibo</h1>
-
+        <a href="https://maiconrmonteiro.github.io/aula004/projetos/modelo3"><img class="logo" id="logoPrincipal" src="fotos/logoFloranda.png" alt="Logo Floranda"></a>
     </header>
     <main>
         <section class="campos" id="campos">
-
-            <label for="valor">Valor</label><br>
-            <input type="number" name="campos" id="valor"><br>
-            <label for="extenso">Valor por Extenso (Opcional)</label><br>
-            <input type="text" name="campos" id="extenso"><br>
-            <label for="pagador">Pagador</label><br>
-            <input type="text" name="campos" id="pagador"><br>
-            <label for="documento">Documento</label><br>
-            <input type="number" name="campos" id="documento"><br>
-            <label for="referente">Referente á</label><br>
-            <input type="text" name="campos" id="referente"><br>
-
-            <label for="PIX">PIX</label>
-            <input type="radio" name="formaPagto" id="PIX" required>
-            <label for="dinheiro">Dinheiro</label>
-            <input type="radio" name="formaPagto" id="dinheiro">
-            <label for="cartao">Cartão</label>
-            <input type="radio" name="formaPagto" id="cartao"><br>
+            <div class="camposInputs">
+                <label class="inputs" for="valor">Valor</label>
+                <input type="number" name="campos" id="valor">
+                <label class="inputs" for="extenso">Valor por Extenso (Opcional)</label>
+                <input type="text" name="campos" id="extenso">
+                <label class="inputs" for="pagador">Pagador</label>
+                <input type="text" name="campos" id="pagador">
+                <label class="inputs" for="documento">Documento</label>
+                <input type="number" name="campos" id="documento">
+                <label class="inputs" for="referente">Referente á</label>
+                <input type="text" name="campos" id="referente">
+            </div>
+            <div class="radios">
+                <label for="PIX">PIX</label>
+                <input type="radio" name="formaPagto" id="PIX" required>
+                <label for="dinheiro">Dinheiro</label>
+                <input type="radio" name="formaPagto" id="dinheiro">
+                <label for="cartao">Cartão</label>
+                <input type="radio" name="formaPagto" id="cartao"><br>
+            </div>
             
-            <input type="button" value="Gerar Recibo" onclick="gerarRecibo()">
+            <div class="btn">
+  
+                <a href="#" class="btn-neon" onclick="gerarRecibo()">Gerar Recibo</a>
+               
+             </div>
+
+            <!--<input class="botao" type="button" value="Gerar Recibo" onclick="gerarRecibo()">-->
 
         </section>
     </main>
     <footer>
         <p>Floranda Comercio de Flores</p>
-        <p>CNPJ: 83.891.994/0001-00</p>
-        <p>BR 101 KM 184, Tijuquinhas, Biguaçu, SC</p>
         <p>Pagina/Sistema desenvolvido por <a href="https://github.com/maiconrmonteiro" target="_blank">Maicon Monteiro</a></p>
     </footer>
 

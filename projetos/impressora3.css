@@ -34,7 +34,6 @@ header > h1 {
 }
 
 
-
 body {
     margin: auto;
     width: 80vw;
@@ -54,6 +53,14 @@ div {
     width: 100%;
 }
 
+#logoBranca {
+    display: none;
+}
+
+#logoPreta {
+    display: block;
+}
+
 .data {
     margin-top: 20px;
     margin-bottom: 80px;
@@ -69,7 +76,7 @@ div {
     width: 50%;
 }
 
-.bt_print {
+.btn {
     display: none;
 }
 
