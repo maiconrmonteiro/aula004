@@ -1,4 +1,4 @@
-function tabuada(){
+/*function tabuada(){
     let num = document.getElementById('txtn')
     let tab = document.getElementById('seltab')
 
@@ -17,4 +17,58 @@ function tabuada(){
             
         }
     }
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+let num = document.getElementById('txtn');
+let campo = document.getElementById('res');
+
+function tabuada() {
+    num = Number(num.value);
+
+    for (num.value.lenght == 0) {
+        campo.innerHTML = 'Digite um numero valido';
+    } else {
+        alert ('ok')
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
