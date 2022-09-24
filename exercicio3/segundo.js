@@ -36,7 +36,7 @@ let campo = document.getElementById('res');
 function tabuada() {
     num = Number(num.value);
 
-    for (num.value.lenght == 0) {
+    if (num.value.lenght == 0) {
         campo.innerHTML = 'Digite um numero valido';
     } else {
         alert ('ok')
