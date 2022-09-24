@@ -1,0 +1,51 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.css_tabuada {
+    margin: auto;
+    border: 1px solid black;
+    width: 25vw;
+    padding: 5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+#campo_numero {
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+}
+
+#escolhas_resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    padding: 10px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
