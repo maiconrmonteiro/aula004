@@ -49,7 +49,7 @@ function gerarRecibo() {
         </div>
         <div class="assinatura">
             <div class="assinatura-ignacio">
-                <img src="../imagens/assinatura-ignacio.png" alt="">
+                <img src="imagens/assinatura-ignacio.png" alt="">
             </div>
             <p>_____________________________________________</p><br><br>
             <p>FLORANDA COMERCIO DE FLORES</p>
@@ -57,7 +57,7 @@ function gerarRecibo() {
                 <p>(48) 3279-8905</p>
         </div>
             <div class="carimbo">
-            <img src="../imagens/carimbro.png" alt="">
+            <img src="imagens/carimbro.png" alt="">
             </div>
             <div class="btn">
   
